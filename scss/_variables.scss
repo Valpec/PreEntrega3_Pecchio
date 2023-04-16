@@ -1,0 +1,42 @@
+
+
+//variables
+$beige-color:#E7D7C9;
+$rosa-color:#D4B2A7;
+$marron-color:#A38F85;
+$gris-color:#CDC6C3;
+$hueso-color:#EDE9E3;
+
+
+//mixins
+@mixin flex-row-center-bet{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-row-center-aro{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin flex-row-center-cen{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-col-center-cen{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

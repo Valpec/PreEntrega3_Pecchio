@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "montserrat";
+  src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "playfair";
+  src: url(../font/PlayfairDisplay-VariableFont_wght.ttf);
+}
+* {
+  font-family: "playfair";
+  margin: 0;
+  padding: 0;
+}
+
+.bgBeige {
+  background-color: #E7D7C9;
+}
+
+.bgMarron {
+  background-color: #A38F85;
+}
+
+.bgRosa {
+  background-color: #D4B2A7;
+}
+
+.bgHueso {
+  background-color: #EDE9E3;
+}
+
+.bgGris {
+  background-color: #CDC6C3;
+}
+
+.logoHeader {
+  max-width: 180px;
+}
+
+.icono {
+  max-width: 30px;
+}
+
+#bgVelaMadera {
+  background: url(../img/productos/velas_madera_fondo.png) no-repeat center center fixed;
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-size: cover;
+}
+#bgVelaMadera .textoFondoMadera {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+}
+
+#bgVelaVidrio {
+  background: url(../img/productos/velas_carameleras_rosas.jpg) no-repeat center center fixed;
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-size: cover;
+}
+#bgVelaVidrio .textoFondoVidrio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #E7D7C9;
+  padding: 12rem;
+}
+
+.itemCatalogo {
+  padding: 2em;
+  row-gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.itemCatalogo h3 {
+  font-size: 1.5rem;
+}
+.itemCatalogo img {
+  max-width: 70%;
+}
+
+.navProductos {
+  position: sticky;
+  top: 7rem;
+}
+
+.accordion-body, .accordion_button {
+  background-color: #CDC6C3;
+  padding: 2rem;
+}
+
+.accordion {
+  --bs-accordion-border-color: #212529;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-color: #212529;
+  --bs-accordion-active-bg: #E7D7C9;
+}
+
+/*# sourceMappingURL=estilo.css.map */
