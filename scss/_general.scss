@@ -7,14 +7,15 @@
   font-family: "playfair";
   src: url(../font/PlayfairDisplay-VariableFont_wght.ttf);
 }
+
 *{
-    $font-family-base: "montserrat";
-    margin: 0;
-    padding: 0;
+    font-family: "playfair";
 }
+
 a{
     text-decoration: none;
     color: #212529;
+    
 }
 .bgBeige{
     background-color: $beige-color;
@@ -46,9 +47,13 @@ a{
     background-size: cover;
 
     .textoFondoMadera{
-        @include flex-col-center-cen;
-        padding: 10rem;
+        // @include flex-col-center-cen;
+        padding: 10rem 0;
     }
+}
+.btn{
+    border: #212529;
+    background-color: #EDE9E3;
 }
 
 #bgVelaVidrio{
@@ -59,26 +64,22 @@ a{
     background-size: cover;
 
     .textoFondoVidrio{
-        @include flex-row-center-cen;
+        // @include flex-row-center-cen;
         color: $beige-color;
-        padding: 12rem;
+        padding: 12rem 0 ;
     }
 }
 
 .itemCatalogo{
-    padding: 2em;
+    padding: 1.5em;
     row-gap: 1rem;
     @include flex-col-center-cen;
-    h3{
-        font-size: 1.5rem;
-    }
-    img{
-    max-width: 70%;
-    }
+
 }
 .navProductos{
     position: sticky;
     top: 8rem;
+    flex-wrap: wrap;
 }
 
 .accordion-body, .accordion_button{
