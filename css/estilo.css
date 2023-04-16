@@ -7,9 +7,13 @@
   src: url(../font/PlayfairDisplay-VariableFont_wght.ttf);
 }
 * {
-  font-family: "playfair";
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #212529;
 }
 
 .bgBeige {
@@ -91,7 +95,7 @@
 
 .navProductos {
   position: sticky;
-  top: 7rem;
+  top: 8rem;
 }
 
 .accordion-body, .accordion_button {
@@ -103,7 +107,7 @@
   --bs-accordion-border-color: #212529;
   --bs-accordion-btn-focus-box-shadow: none;
   --bs-accordion-active-color: #212529;
-  --bs-accordion-active-bg: #E7D7C9;
+  --bs-accordion-active-bg: #EDE9E3;
 }
 
 /*# sourceMappingURL=estilo.css.map */

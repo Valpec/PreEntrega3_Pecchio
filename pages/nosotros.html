@@ -17,11 +17,11 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <header class="row sticky-top bgHueso d-flex flex-wrap">
-      <nav class="navbar navbar-expand-lg px-3 ">
+  <div class="container-fluid p-0">
+    <header class="row sticky-top bgHueso d-flex m-0">
+      <nav class="navbar navbar-expand-lg col-12 col-lg-12 px-3 py-2 ">
           <a href="../index.html" class="navbar-brand">
-            <img src="../img/icons/logo_texto_verde.png" alt="Logo Cattalina texto" width="180">
+            <img class="img-fluid mw-50 logoHeader" src="../img/icons/logo_texto_verde.png" alt="Logo Cattalina texto" >
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -30,15 +30,15 @@
           </button>
 
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav px-5">
-              <li class="nav-item"><a href="../index.html" class="nav-link px-3 link-dark">INICIO</a></li>
-              <li class="nav-item"><a href="productos.html" class="nav-link px-3 link-dark">PRODUCTOS</a></li>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="../index.html" class="nav-link px-2 link-dark">INICIO</a></li>
+              <li class="nav-item"><a href="productos.html" class="nav-link px-2 link-dark">PRODUCTOS</a></li>
               <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">NOSOTROS</a></li>
-              <li class="nav-item"><a href="preguntas_frecuentes.html" class="nav-link px-3 link-dark">FAQs</a></li>
-              <li class="nav-item"><a href="contacto.html" class="nav-link px-3 link-dark">CONTACTO</a></li>
+              <li class="nav-item"><a href="preguntas_frecuentes.html" class="nav-link px-2 link-dark">FAQs</a></li>
+              <li class="nav-item"><a href="contacto.html" class="nav-link px-2 link-dark">CONTACTO</a></li>
             </ul>
-            <div class="px-2">
-              <a href="#" class="text-decoration-none px-2">
+            <div class="px-4 d-flex justify-content-center">
+              <a href="#" class="text-decoration-none px-1">
                 <img class="img-fluid " src="../img/icons/search.png" alt="Boton de busqueda" width="30">
               </a>
               <a href="#" class="text-decoration-none px-2">
@@ -61,7 +61,7 @@
         </p>
         <p>
           Queriamos compartir con otras personas nuestra pasion por las
-          escencias y decidimos crear Cattalina Deco-Home.
+          esencias y decidimos crear Cattalina Deco-Home.
         </p>
         <p>
           Ya hace más de un año desde que realizamos productos y acompañamos a
@@ -71,24 +71,22 @@
       </div>
     </section>
 
-    <footer class="row d-flex flex-wrap justify-content-between align-items-center py-3 bgHueso">
-      <ul class="nav col-md-4 list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#whatsapp" />
-            </svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/cattalina.decohome/"><svg class="bi"
-              width="24" height="24">
-              <use xlink:href="#instagram" />
-            </svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#envelope" />
-            </svg></a></li>
-      </ul>
-      <div class="col-md-4 d-flex align-items-center justify-content-end">
-        <img class="img-fluid" src="../img/icons/logo_rosa.png" alt="Logo Cattalina Rosa" width="150">
+    <footer class="row py-3 m-0 bgHueso border-top ">
+      <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+          <a href="https://www.instagram.com/cattalina.decohome/" target="_blank">
+            <img class="icono img-fluid m-1" src="../img/icons/instagram_beige.png" alt="Instagram" />
+          </a>
+          <a href="#">
+            <img class="icono img-fluid m-1" src="../img/icons/email_beige.png" alt="Correo" />
+          </a>
+          <a href="#">
+            <img class="icono img-fluid m-1" src="../img/icons/whatsapp_beige.png" alt="Whatsapp" />
+          </a>
+        </div>
+      <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+          <img class="img-fluid mw-50 logoHeader" src="../img/icons/logo_text_beige.png" alt="Logo Cattalina">
       </div>
-    </footer>
-  </div>
+  </footer>
   <!--javascript bootstrap -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
