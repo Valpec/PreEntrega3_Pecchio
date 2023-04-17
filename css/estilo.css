@@ -1,18 +1,9 @@
 @font-face {
-  font-family: "montserrat";
-  src: url(../font/Montserrat-VariableFont_wght.ttf);
-}
-@font-face {
   font-family: "playfair";
   src: url(../font/PlayfairDisplay-VariableFont_wght.ttf);
 }
 * {
   font-family: "playfair";
-}
-
-a {
-  text-decoration: none;
-  color: #212529;
 }
 
 .bgBeige {
@@ -43,6 +34,17 @@ a {
   max-width: 30px;
 }
 
+.nav-link {
+  --bs-navbar-hover-color: #ff2f;
+}
+.nav-link :after {
+  border-bottom: 2px #D4B2A7;
+  transition: border-bottom 2s 0.3s;
+}
+.nav-link :after:hover::after {
+  width: 100%;
+}
+
 #bgVelaMadera {
   background: url(../img/productos/velas_madera_fondo.png) no-repeat center center fixed;
   width: 100%;
@@ -52,11 +54,23 @@ a {
 }
 #bgVelaMadera .textoFondoMadera {
   padding: 10rem 0;
+  color: #E7D7C9;
 }
 
-.btn {
-  border: #212529;
+a {
+  color: #212529;
+  text-decoration: none;
+}
+a :hover {
+  color: #A38F85;
+}
+
+.btn-light {
   background-color: #EDE9E3;
+  border: #212529;
+}
+.btn-light :hover {
+  color: #212529;
 }
 
 #bgVelaVidrio {
@@ -72,13 +86,18 @@ a {
 }
 
 .itemCatalogo {
-  padding: 1.5em;
-  row-gap: 1rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 1.5rem;
+  row-gap: 1rem;
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+.itemCatalogo :hover {
+  transform: scale(1.2);
 }
 
 .navProductos {
@@ -87,16 +106,21 @@ a {
   flex-wrap: wrap;
 }
 
-.accordion-body, .accordion_button {
+.accordion-body,
+.accordion_button {
   background-color: #CDC6C3;
   padding: 2rem;
 }
 
-.accordion {
-  --bs-accordion-border-color: #212529;
-  --bs-accordion-btn-focus-box-shadow: none;
-  --bs-accordion-active-color: #212529;
-  --bs-accordion-active-bg: #EDE9E3;
+.accordion :focus {
+  box-shadow: none;
+  color: #212529;
+  background-color: #EDE9E3;
+}
+
+.form-floating :focus {
+  box-shadow: none;
+  border: none;
 }
 
 /*# sourceMappingURL=estilo.css.map */
