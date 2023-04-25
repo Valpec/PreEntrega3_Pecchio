@@ -1,12 +1,17 @@
 //fonts
 @font-face {
+    font-family: "montserrat";
+    src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
     font-family: "playfair";
     src: url(../font/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
-//estilo 
+//estilo
 * {
-    font-family: "playfair";
+    font-family: "montserrat";
 }
 
 .bgBeige {
@@ -28,27 +33,28 @@
 .bgGris {
     background-color: $gris-color;
 }
+.bgHuesoTrans{
+    background-color: $hueso-transparent-color;
+}
 
-//header 
+//header
+.navbar-nav {
+    z-index: 1000;
+    
+}
+// .nav-link{
+//     color: $negro-color;
+//     :hover{
+//         color: $rosa-color;
+//     }
+// }
+
 .logoHeader {
     max-width: 180px;
 }
 
 .icono {
     max-width: 30px;
-}
-
-.nav-link {
-    --bs-navbar-hover-color: #ff2f;
-
-    :after {
-        border-bottom: 2px $rosa-color;
-        transition: border-bottom 2s 0.3s;
-
-        &:hover::after {
-            width: 100%;
-        }
-    }
 }
 
 #bgVelaMadera {
@@ -64,19 +70,20 @@
     }
 }
 
-a{
+a {
     color: $negro-color;
     text-decoration: none;
-    :hover
-    {
+
+    :hover {
         color: $marron-color;
     }
 }
 
-.btn-light{
+.btn-light {
     background-color: $hueso-color;
     border: $negro-color;
-    :hover{
+
+    :hover {
         color: $negro-color;
     }
 }
@@ -99,18 +106,23 @@ a{
     @include flex-col-center-cen;
     padding: 1.5rem;
     row-gap: 1rem;
+
     cursor: pointer;
     transition: transform 1s ease-in-out;
 
-    :hover {
+
+    img:hover {
         transform: scale(1.2);
     }
+
+
 }
 
 .navProductos {
     position: sticky;
-    top: 8rem;
+    top: 7.5rem;
     flex-wrap: wrap;
+    z-index: 500;
 }
 
 // faqs
@@ -118,20 +130,35 @@ a{
 .accordion_button {
     background-color: $gris-color;
     padding: 2rem;
+
 }
-.accordion{
-    :focus{
+
+.accordion-item {
+    :focus {
         box-shadow: none;
+        color: $negro-color;
+        background-color: $hueso-color;
+    }
+
+    :active {
+        color: $negro-color;
+        background-color: $hueso-color;
+    }
+
+}
+
+.accordion-header {
+    :not(.collapsed) {
         color: $negro-color;
         background-color: $hueso-color;
     }
 }
 
+
 //contacto
-.form-floating{
-    :focus{
+.form-floating {
+    :focus {
         box-shadow: none;
         border: none;
     }
 }
-

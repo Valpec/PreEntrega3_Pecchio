@@ -1,9 +1,13 @@
 @font-face {
+  font-family: "montserrat";
+  src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
   font-family: "playfair";
   src: url(../font/PlayfairDisplay-VariableFont_wght.ttf);
 }
 * {
-  font-family: "playfair";
+  font-family: "montserrat";
 }
 
 .bgBeige {
@@ -26,23 +30,20 @@
   background-color: #CDC6C3;
 }
 
+.bgHuesoTrans {
+  background-color: rgba(237, 233, 227, 0.95);
+}
+
+.navbar-nav {
+  z-index: 1000;
+}
+
 .logoHeader {
   max-width: 180px;
 }
 
 .icono {
   max-width: 30px;
-}
-
-.nav-link {
-  --bs-navbar-hover-color: #ff2f;
-}
-.nav-link :after {
-  border-bottom: 2px #D4B2A7;
-  transition: border-bottom 2s 0.3s;
-}
-.nav-link :after:hover::after {
-  width: 100%;
 }
 
 #bgVelaMadera {
@@ -96,14 +97,15 @@ a :hover {
   cursor: pointer;
   transition: transform 1s ease-in-out;
 }
-.itemCatalogo :hover {
+.itemCatalogo img:hover {
   transform: scale(1.2);
 }
 
 .navProductos {
   position: sticky;
-  top: 8rem;
+  top: 7.5rem;
   flex-wrap: wrap;
+  z-index: 500;
 }
 
 .accordion-body,
@@ -112,8 +114,17 @@ a :hover {
   padding: 2rem;
 }
 
-.accordion :focus {
+.accordion-item :focus {
   box-shadow: none;
+  color: #212529;
+  background-color: #EDE9E3;
+}
+.accordion-item :active {
+  color: #212529;
+  background-color: #EDE9E3;
+}
+
+.accordion-header :not(.collapsed) {
   color: #212529;
   background-color: #EDE9E3;
 }
