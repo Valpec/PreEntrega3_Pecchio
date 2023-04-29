@@ -34,7 +34,7 @@
   background-color: rgba(237, 233, 227, 0.95);
 }
 
-.navbar-nav {
+.navbar {
   z-index: 1000;
 }
 
@@ -62,15 +62,32 @@ a {
   color: #212529;
   text-decoration: none;
 }
-a :hover {
+a:hover {
   color: #A38F85;
 }
 
+.indexCard button {
+  z-index: 2;
+  cursor: pointer;
+}
+.indexCard button:hover + img {
+  opacity: 0.7;
+}
+.indexCard button img {
+  transition: 4s;
+  z-index: -1;
+  border-radius: 5%;
+}
+
 .btn-light {
-  background-color: #EDE9E3;
+  background-color: #E7D7C9;
   border: #212529;
 }
-.btn-light :hover {
+.btn-light:hover {
+  color: #212529;
+  background-color: #EDE9E3;
+}
+.btn-light a:hover {
   color: #212529;
 }
 
@@ -107,6 +124,12 @@ a :hover {
   flex-wrap: wrap;
   z-index: 500;
 }
+.navProductos .nav .nav-link {
+  color: #212529;
+}
+.navProductos .nav :hover {
+  color: #E7D7C9;
+}
 
 .accordion-body,
 .accordion_button {
@@ -129,9 +152,20 @@ a :hover {
   background-color: #EDE9E3;
 }
 
+.form-control {
+  border-radius: 0%;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1.5px solid #212529;
+}
+.form-control:focus {
+  background-color: transparent;
+}
+
 .form-floating :focus {
   box-shadow: none;
   border: none;
+  border-bottom: 1.5px solid #212529;
 }
 
 /*# sourceMappingURL=estilo.css.map */
