@@ -33,12 +33,13 @@
 .bgGris {
     background-color: $gris-color;
 }
-.bgHuesoTrans{
+
+.bgHuesoTrans {
     background-color: $hueso-transparent-color;
 }
 
 //header
-.navbar{
+.navbar {
     z-index: 1000;
 }
 
@@ -69,28 +70,28 @@
 a {
     color: $negro-color;
     text-decoration: none;
+
     &:hover {
         color: $marron-color;
     }
 }
 
 .indexCard {
-   
-    button{
+    button {
         z-index: 2;
         cursor: pointer;
-        &:hover + img{
+
+        &:hover+img {
             opacity: 0.7;
         }
-    img{
-        transition: 4s;
-        z-index: -1;
-        border-radius: 5%;
+
+        img {
+            transition: 4s;
+            z-index: -1;
+            border-radius: 5%;
+        }
     }
 }
-}
-        
-            
 
 .btn-light {
     background-color: $beige-color;
@@ -100,7 +101,8 @@ a {
         color: $negro-color;
         background-color: $hueso-color;
     }
-    a:hover{
+
+    a:hover {
         color: $negro-color;
     }
 }
@@ -127,7 +129,8 @@ a {
     row-gap: 2rem;
     cursor: pointer;
     transition: transform .5s ease-in-out;
-    &:hover{
+
+    &:hover {
         transform: scale(1.2);
     }
 }
@@ -137,11 +140,13 @@ a {
     top: 6.7rem;
     flex-wrap: wrap;
     z-index: 500;
-    .nav{
-        .nav-link{
+
+    .nav {
+        .nav-link {
             color: $negro-color;
         }
-        :hover{
+
+        :hover {
             color: $beige-color;
         }
     }
@@ -178,15 +183,17 @@ a {
 
 
 //contacto
-.form-control{
+.form-control {
     border-radius: 0%;
     background-color: transparent;
     border: 0;
     border-bottom: 1.5px solid $negro-color;
-    &:focus{
+
+    &:focus {
         background-color: transparent;
     }
 }
+
 .form-floating {
     :focus {
         box-shadow: none;
@@ -198,7 +205,7 @@ a {
 
 //sizing de fotos responsive
 @media (min-width: 1024px) {
-    .itemCatalogo img{
+    .itemCatalogo img {
         max-width: 300px;
     }
 }
