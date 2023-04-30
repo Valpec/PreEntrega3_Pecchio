@@ -47,7 +47,7 @@
 }
 
 #bgVelaMadera {
-  background: url(../img/productos/velas_madera_fondo.jpg) no-repeat center center fixed;
+  background: url(../img/productos/vela_madera_nar.jpg) no-repeat center center fixed;
   width: 100%;
   height: auto;
   position: relative;
@@ -92,15 +92,16 @@ a:hover {
 }
 
 #bgVelaVidrio {
-  background: url(../img/productos/velas_carameleras_rosas.jpg) no-repeat center center fixed;
+  background: url(../img/productos/velas_caramelera_rosa.jpeg) no-repeat center center fixed;
   width: 100%;
   height: auto;
   position: relative;
   background-size: cover;
 }
 #bgVelaVidrio .textoFondoVidrio {
-  color: #E7D7C9;
+  color: #A38F85;
   padding: 12rem 0;
+  font-family: "playfair";
 }
 
 .itemCatalogo {
@@ -110,17 +111,17 @@ a:hover {
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
-  row-gap: 1rem;
+  row-gap: 2rem;
   cursor: pointer;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
-.itemCatalogo img:hover {
+.itemCatalogo:hover {
   transform: scale(1.2);
 }
 
 .navProductos {
   position: sticky;
-  top: 7.5rem;
+  top: 6.7rem;
   flex-wrap: wrap;
   z-index: 500;
 }
@@ -166,6 +167,12 @@ a:hover {
   box-shadow: none;
   border: none;
   border-bottom: 1.5px solid #212529;
+}
+
+@media (min-width: 1024px) {
+  .itemCatalogo img {
+    max-width: 300px;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

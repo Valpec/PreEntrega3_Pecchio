@@ -51,7 +51,7 @@
 }
 
 #bgVelaMadera {
-    background: url(../img/productos/velas_madera_fondo.jpg) no-repeat center center fixed;
+    background: url(../img/productos/vela_madera_nar.jpg) no-repeat center center fixed;
     width: 100%;
     height: auto;
     position: relative;
@@ -90,13 +90,11 @@ a {
             
 
 .btn-light {
-    // background-color: $hueso-color;
     background-color: $beige-color;
     border: $negro-color;
 
     &:hover {
         color: $negro-color;
-        // background-color: $beige-color;
         background-color: $hueso-color;
     }
     a:hover{
@@ -107,34 +105,33 @@ a {
 
 //productos
 #bgVelaVidrio {
-    background: url(../img/productos/velas_carameleras_rosas.jpg) no-repeat center center fixed;
+    background: url(../img/productos/velas_caramelera_rosa.jpeg) no-repeat center center fixed;
     width: 100%;
     height: auto;
     position: relative;
     background-size: cover;
 
     .textoFondoVidrio {
-        color: $beige-color;
+        color: $marron-color;
         padding: 12rem 0;
+        font-family: "playfair";
     }
 }
 
 .itemCatalogo {
     @include flex-col-center-cen;
     padding: 1.5rem;
-    row-gap: 1rem;
-
+    row-gap: 2rem;
     cursor: pointer;
-    transition: transform 1s ease-in-out;
-
-    img:hover {
+    transition: transform .5s ease-in-out;
+    &:hover{
         transform: scale(1.2);
     }
 }
 
 .navProductos {
     position: sticky;
-    top: 7.5rem;
+    top: 6.7rem;
     flex-wrap: wrap;
     z-index: 500;
     .nav{
@@ -193,5 +190,12 @@ a {
         border: none;
         border-bottom: 1.5px solid $negro-color;
 
+    }
+}
+
+//sizing de fotos responsive
+@media (min-width: 1024px) {
+    .itemCatalogo img{
+        max-width: 300px;
     }
 }
