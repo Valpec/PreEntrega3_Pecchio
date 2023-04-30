@@ -52,6 +52,8 @@
 
 #bgVelaMadera {
     background: url(../img/productos/vela_madera_nar.jpg) no-repeat center center fixed;
+    background-color: gray;
+    background-blend-mode: multiply;
     width: 100%;
     height: auto;
     position: relative;
@@ -60,6 +62,7 @@
     .textoFondoMadera {
         padding: 10rem 0;
         color: $beige-color;
+        font-family: "playfair";
     }
 }
 
